@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.jiangjunling.zqh.zqhjiangjunling.util.Utils;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends GeneralBaseAppCompatActivity implements View.OnClickListener {
 
     public static final int DEFART_TYPR=0;
     public static final int ADDKEY_TYPR=1;

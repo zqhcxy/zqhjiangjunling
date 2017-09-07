@@ -13,7 +13,7 @@ import com.jiangjunling.zqh.zqhjiangjunling.util.Utils;
 /**
  * 保存key，如果key之前存在，就会被覆盖
  */
-public class AddKeyValueActivity extends AppCompatActivity {
+public class AddKeyValueActivity extends GeneralBaseAppCompatActivity {
 
     private EditText mNameEditText;
     private EditText mValueEditText;
@@ -23,7 +23,7 @@ public class AddKeyValueActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_key_value);
-
+        initSuperToolabr();
         initView();
     }
 

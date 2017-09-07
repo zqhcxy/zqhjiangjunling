@@ -1,7 +1,6 @@
 package com.jiangjunling.zqh.zqhjiangjunling;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -13,7 +12,7 @@ import android.widget.TextView;
 
 import com.jiangjunling.zqh.zqhjiangjunling.util.Utils;
 
-public class ShowKeyActivity extends AppCompatActivity implements View.OnClickListener {
+public class ShowKeyActivity extends GeneralBaseAppCompatActivity implements View.OnClickListener {
 
     private TextView showKey_tv;
     private EditText showKey_find_key;
@@ -24,7 +23,7 @@ public class ShowKeyActivity extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_key);
-
+        initSuperToolabr();
         initView();
     }
 

@@ -3,37 +3,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jiangjunling.zqh.zqhjiangjunling.AddKeyValueActivity">
+    android:layout_height="match_parent">
+
+    <include layout="@layout/base_toolbar_ly"/>
 
     <EditText
         android:id="@+id/addkey_keyname_ed"
         style="@style/editTextTheme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_below="@+id/collapContainter"
         android:hint="@string/addkey_name_hint"
-        android:maxLines="1"/>
+        />
 
     <EditText
         android:id="@+id/addkey_keyvalue_ed"
         style="@style/editTextTheme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/addkey_keyname_ed"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:hint="@string/addkey_value_hint"
         android:inputType="textVisiblePassword"
-        android:maxLines="1"/>
+        />
 
     <Button
         android:id="@+id/addkey_confirm_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/addkey_keyvalue_ed"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="@string/addkey_confirm_text"/>
 </RelativeLayout>
