@@ -10,28 +10,70 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.jiangjunling.zqh.zqhjiangjunling.MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/loging_edit"
-        android:layout_centerInParent="true"
-        android:src="@mipmap/ic_launcher"/>
-
-    <EditText
-        android:id="@+id/loging_edit"
+    <RelativeLayout
+        android:id="@+id/loding_ly"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:layout_centerInParent="true"
-        android:inputType="numberPassword"
-        android:maxLines="1"/>
+        android:layout_height="match_parent"
+       >
 
-    <Button
-        android:id="@+id/loging_btn"
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"/>
+
+        <EditText
+            android:id="@+id/loging_edit"
+            android:layout_below="@+id/logo_iv"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="54dp"
+            android:inputType="numberPassword"
+            android:hint="@string/lock_password_jint_text"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/loging_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loging_edit"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:text="报"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/regit_ly"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/loging_edit"
-        android:layout_marginTop="10dp"
-        android:text="报"
-        android:textSize="18sp"/>
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
+        <EditText
+            android:id="@+id/regit_lockkey_et"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:inputType="numberPassword"
+            android:hint="设置阅读密码"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/regit_lockkey_again_et"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_below="@+id/regit_lockkey_et"
+            android:layout_marginTop="20dp"
+            android:inputType="numberPassword"
+            android:hint="再次设置阅读密码"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/regit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regit_lockkey_again_et"
+            android:layout_marginTop="20dp"
+            android:text="完成"/>
+    </RelativeLayout>
 </RelativeLayout>

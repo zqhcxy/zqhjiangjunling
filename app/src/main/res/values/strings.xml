@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">zqhjiangjunling</string>
     <string name="app_name2">真将军令</string>
+
+    <string name="addkey_name_hint">输入要保存的名字</string>
+    <string name="addkey_value_hint">输入要保存的内容</string>
+    <string name="addkey_confirm_text">确认</string>
+    <string name="addkey_faile_input_text">请正确输入数据</string>
+    <string name="addkey_success_input_text">保存完成</string>
+
+    <string name="lock_password_jint_text">请输入口令</string>
+    <string name="show_key_fail_text">谎报军情</string>
+    <string name="show_key_text">展示栏</string>
+    <string name="show_key_input_hint">请输入要查找的代号</string>
+    <string name="show_key_confirm_text">查找</string>
+    <string name="show_key_addkey_text">添加代号</string>
 </resources>
